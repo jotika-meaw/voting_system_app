@@ -1,6 +1,6 @@
 # Voting Systems App 🗳
 
-Made By batchmates named Mahir and Jotika
+Made By Mahir Faisal and Jotika Das with the help of many resources
 
 Welcome to the **Voting Systems App**! This is a Streamlit-based web application that allows you to simulate and explore different voting systems. Whether you're a student, researcher, or just curious about voting methods, this app provides an interactive way to understand how different systems work.
 
