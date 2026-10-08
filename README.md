@@ -1,102 +1,82 @@
-# Voting Systems App 🗳
+# Voting Systems App 🗳️
 
-Made By Mahir Faisal and Jotika Das with the help of many resources
+**An interactive Streamlit web app for simulating and comparing five voting systems.**
 
-Welcome to the **Voting Systems App**! This is a Streamlit-based web application that allows you to simulate and explore different voting systems. Whether you're a student, researcher, or just curious about voting methods, this app provides an interactive way to understand how different systems work.
+Made by Mahir Faisal and Jotika Das.
 
----
+## 📌 Overview
 
-## Features 🌟
+This app lets students, researchers, and curious voters explore how different voting methods behave. Pick a system, enter candidates and ballots, and see the winner, tally, and an animated celebration — all in one interactive interface.
 
-- **Multiple Voting Systems**: Choose from five different voting systems:
-  - **First Past the Post (FPTP)**
-  - **Approval Voting**
-  - **Preferential Voting**
-  - **Condorcet Method**
-  - **Borda Count**
+## ✨ Features
 
-- **Customizable Inputs**:
-  - Set the number of candidates and voters.
-  - Input candidate names and votes interactively.
+- **Five voting systems** — First Past the Post, Approval, Preferential, Condorcet, and Borda Count
+- **Configurable inputs** — set the number of candidates and voters from the sidebar
+- **Interactive ballots** — enter candidate names and votes/rankings with Streamlit widgets
+- **Detailed results** — winner announcement plus raw vote counts or scores for every candidate
+- **Fireworks animation** — celebrates when a winner is declared
+- **Sidebar settings** — switch voting systems without losing your inputs
 
-- **Dynamic Results**:
-  - View the winner(s) and detailed vote counts/scores for each system.
-  - Celebrate with a **fireworks animation** when a winner is declared! 🎆
+## 🗳️ Voting Systems Explained
 
-- **User-Friendly Interface**:
-  - Built with **Streamlit**, making it easy to use and visually appealing.
-  - Interactive widgets for input and selection.
+### 1. First Past the Post (FPTP)
+Each voter selects one candidate. The candidate with the most votes wins.
 
----
+### 2. Approval Voting
+Voters approve as many candidates as they like. The candidate with the most approvals wins.
 
+### 3. Preferential Voting
+Voters rank candidates. Votes are counted in rounds, eliminating the least popular candidate each round until a majority winner emerges.
 
-## Voting Systems Explained 📚
+### 4. Condorcet Method
+Voters rank candidates. The winner is the candidate who beats every other candidate in pairwise comparisons (the app reports "No Condorcet Winner" when none exists).
 
-### 1. **First Past the Post (FPTP)**
-   - Each voter selects one candidate.
-   - The candidate with the most votes wins.
+### 5. Borda Count
+Voters rank candidates. Points are awarded by rank position and the highest total wins.
 
-### 2. **Approval Voting**
-   - Each voter can approve as many candidates as they like.
-   - The candidate with the most approvals wins.
+## 🛠️ Technologies
 
-### 3. **Preferential Voting**
-   - Voters rank candidates in order of preference.
-   - Votes are counted in rounds, eliminating the least popular candidate each round until a majority winner is found.
+- Python 3
+- [Streamlit](https://streamlit.io/) (UI and state)
+- Standard library: `itertools`, `random`
 
-### 4. **Condorcet Method**
-   - Voters rank candidates in order of preference.
-   - The winner is the candidate who beats every other candidate in pairwise comparisons.
+## 🚀 Installation
 
-### 5. **Borda Count**
-   - Voters rank candidates in order of preference.
-   - Candidates are awarded points based on their rank, and the candidate with the highest total points wins.
+```bash
+git clone https://github.com/jotika-meaw/voting_system_app.git
+cd voting_system_app
+pip install streamlit
+```
 
----
+> The only external dependency is Streamlit.
 
-## Example Usage 🖥️
+## 💻 Usage
 
-1. **Set the Number of Candidates and Voters**:
-   - Choose 3 candidates and 5 voters.
+```bash
+streamlit run voteapp.py
+```
 
-2. **Input Candidate Names**:
-   - Candidate 1: Alice
-   - Candidate 2: Bob
-   - Candidate 3: Charlie
+The app opens in your browser. Then:
 
-3. **Input Votes**:
-   - For each voter, select their preferred candidate(s) or rank them based on the chosen voting system.
+1. **Choose a voting system** in the sidebar.
+2. **Set the number of candidates and voters** (sidebar).
+3. **Enter candidate names**, then fill in each voter's ballot as prompted.
+4. **Run the voting system** and review the winner, counts, and fireworks.
 
-4. **Run the Voting System**:
-   - Click the "Run Voting System" button to see the results and enjoy the fireworks! 🎇
+## 🌐 Live Demo
 
----
+[https://votingapp.streamlit.app/](https://votingapp.streamlit.app/)
 
-## Contributing 🤝
+## 📂 Project Structure
 
-Contributions are welcome! If you'd like to improve the app, add new voting systems, or fix bugs, feel free to open an issue or submit a pull request.
+```text
+voting_system_app/
+├── voteapp.py   # Streamlit app: voting logic, UI and fireworks
+└── README.md
+```
 
----
+## 👩‍💻 Author
 
-## License 📜
+**Jotika Das** — [GitHub](https://github.com/jotika-meaw) · [LinkedIn](https://www.linkedin.com/in/jotikadas) · [Email](mailto:jotikadas57@gmail.com)
 
-**Repository:** https://github.com/jotika-meaw/voting_system_app
-
----
-
-## Acknowledgments 🙏
-
-- Built with ❤️ using **Streamlit**.
-- Inspired by the need to understand and explore different voting systems.
-
----
-
-Enjoy exploring the world of voting systems! If you have any questions or feedback, feel free to reach out. 🚀
-
----
-
-**Click Here to Preview** 🗳
-
-https://votingapp.streamlit.app/
-
-**Happy Voting!** 🗳️
+Co-developed with Mahir Faisal.
