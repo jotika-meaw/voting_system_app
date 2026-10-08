@@ -80,7 +80,7 @@ Contributions are welcome! If you'd like to improve the app, add new voting syst
 
 ## License 📜
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+**Repository:** https://github.com/jotika-meaw/voting_system_app
 
 ---
 
